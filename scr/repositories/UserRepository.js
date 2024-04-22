@@ -42,7 +42,7 @@ class UserRepository {
         }
     }
 
-    // Outras funções CRUD conforme necessário
+   
 }
 
 module.exports = new UserRepository();
