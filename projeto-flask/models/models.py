@@ -2,7 +2,6 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-# Corrija o URI do banco de dados de acordo com o banco de dados desejado
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mongodb+srv://prilimarj:12345678#@cluster0.ylej0qf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 
 db = SQLAlchemy(app)
