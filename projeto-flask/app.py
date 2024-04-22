@@ -4,7 +4,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# Dicionário temporário para armazenar usuários em memória
+
 users = {}
 
 
