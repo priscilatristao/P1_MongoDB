@@ -12,9 +12,7 @@ app.post('/login', async (req, res) => {
     try {
         const { username, password } = req.body;
 
-        // Aqui você implementaria a lógica de autenticação do usuário
-
-        // Por enquanto, vamos apenas fazer uma requisição ao backend Flask para verificar se o usuário existe
+    
         const response = await axios.post('http://localhost:3000/check_user', { username });
         
         if (response.data.exists) {
